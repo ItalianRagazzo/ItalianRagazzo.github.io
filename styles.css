@@ -74,3 +74,16 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.image-container {
+            float: left;
+            margin-right: 10px;
+}
+.resizable-image {
+            width: 350px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+		.clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
