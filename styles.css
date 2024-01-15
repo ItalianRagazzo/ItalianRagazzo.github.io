@@ -79,7 +79,7 @@ footer {
             margin-right: 10px;
 }
 .resizable-image {
-            width: 350px; /* Adjust the width as needed */
+            width: 300px; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
         }
 		.clearfix::after {
