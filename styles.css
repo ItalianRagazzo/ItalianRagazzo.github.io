@@ -9,36 +9,40 @@
 html, body {
     margin: 0;
     padding: 0;
-}
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--light-grey);
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-color: #f5f5f5; /* Light gray background */
 }
 
 header {
-    background-color: var(--black);
+background-color: #333; /* Dark gray header */
+}
+
+.header-text{
     color: #fff;
+}
+
+.header-content {
     text-align: center;
-    padding: 1em 0;
+    padding-top: 1em;
     width: 100%;
+    justify-content: center;
 }
 
 section {
-    background-color: var(--grey);
+    background-color: #fff; /* White section background */
     max-width: 800px;
     margin: 2em auto;
     padding: 1em;
-
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     margin: 0;
-    color: var(--white);
+    color: #333; /* Dark gray heading */
 }
 
 h2, h3, p {
-    color: var(--white)
+    color: #333; /* Dark gray text */
 }
 
 ul {
@@ -48,7 +52,7 @@ ul {
 
 li {
     margin-bottom: 0.5em;
-    color: var(--white)
+    color: #333; /* Dark gray text */
 }
 
 a {
@@ -56,34 +60,117 @@ a {
     text-decoration: none;
 }
 
-    a:hover {
-        text-decoration: underline;
-    }
+a:hover {
+    text-decoration: underline;
+}
 
 .scroll-mt-16 {
     overflow-y: scroll;
     max-height: calc(100vh - 60px);
 }
 
-footer {
-    text-align: center;
+
+.left-justify {
+    text-align: left;
+}
+
+.menu {
+    margin-left: 10px;
+    float: left;
+    display: flex;
+    justify-content: left;
+    background-color: #333; /* Dark gray menu background */
     padding: 1em 0;
-    background-color: var(--black);
+   
+}
+
+.menu li {
+    margin-right: 1em;
+}
+
+.menu a {
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-decoration: none;
 }
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
 .image-container {
-            float: left;
-            margin-right: 10px;
+    flex: 1;
+    margin-right: 10px;
 }
+
 .resizable-image {
-            width: 300px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-		.clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+    width: 60%; /* Smaller profile picture */
+    height: auto;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.image-grid {
+    width: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 10px;
+}
+
+.image-grid img {
+    width: 100%; 
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    width: min-content;
+}  
+
+.flex-child:first-child {
+    width: min-content;
+    margin-right: 0;
+} 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: #ffd700;
+    /* Change the color on hover */
+}

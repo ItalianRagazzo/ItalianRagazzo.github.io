@@ -8,12 +8,24 @@
 </head>
 <body>
     <header>
-        <h1>Nathan DiGilio</h1>
-        <p>Computer Programmer</p>
+         <div class="header-content">
+            <h1 class="header-text">Nathan DiGilio</h1>
+            <p class="header-text">Computer Programmer</p>
+        </div>
+        <div class="navbar">
+            <ul class="nav-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
-
+   
+    
     <div class="scroll-mt-16">
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <p>
                 Hello! I'm a dedicated computer programmer with a strong background in VB.NET and WPF development, coupled with proficiency in C++. Currently, I'm on a rewarding academic journey pursuing a degree in Computer Science and Mathematics at Penn State Behrend.<br /><br />
@@ -21,15 +33,37 @@
                 Beyond my academic pursuits, I am deeply fascinated by puzzle-solving algorithms and the transformative world of machine learning. These interests fuel my curiosity and drive me to explore innovative solutions in the dynamic field of computer science.<br /><br />
                 I'm passionate about pushing the boundaries of what technology can achieve and look forward to contributing my skills and knowledge to impactful projects in the future.<br /><br />
             </p>
+        </section>
 
+        <section id="skills">
+            
             <h2>Skills</h2>
-            <ul>
+           <div class="flex-child skills">
+            <div class="flex-container">
+                 <ul>
                 <li>Computer Programming</li>
                 <li>C++, VB.NET, Java, mySQL</li>
                 <li>WPF</li>
                 <!-- Add more skills as needed -->
-            </ul>
+            </ul>  
+        </div>      
+        <div class="flex-child images">   
+            <div class="image-grid">
+                <img class="image-grid img" src="images/C++.png" alt="Image 1">
+                <img class="image-grid img" src="images/mySQL.png" alt="Image 2">
+                <img class="image-grid img" src="images/VB.png" alt="Image 3">
+                <img class="image-grid img" src="images/WPF.jpg" alt="Image 4">
+                <img class="image-grid img" src="images/XAML.jpg" alt="Image 5">
+            </div> 
+        </div>
+   </div>
+ </section>
+        </section>
 
+    
+            
+
+        <section id="experience">
             <h2>Experience</h2>
             <h3>Developer - KMD Technology Solutions, LLC | Nov 2019 - Present</h3>
             <p>
@@ -42,36 +76,40 @@
             <!-- Repeat this section for each job experience -->
             <h3>Undergrad Researcher - Penn State Behrend | May 2023 - August 2023</h3>
             <p>
-                Under the guidence of a Penn State Professor I developed and algorithm to solve KenKen puzzle in C++.
+                Under the guidance of a Penn State Professor, I developed an algorithm to solve KenKen puzzles in C++.
             </p>
-
-            <div class="image-container">
-                <img src="Screenshot_13.png" alt="Image 1" class="resizable-image">
+            <div class="flex-container">
+            <div class="flex-child kenken">
+                <img src="images/KenKen.png" alt="Image 1" class="resizable-image">
             </div>
 
-            <div class="image-container">
-                <img src="Screenshot_14.png" alt="Image 2" class="resizable-image">
+            <div class="flex-child kenkensolved">
+                <img src="images/KenKenSolved.png" alt="Image 2" class="resizable-image">
             </div>
-            <br class="clearfix">
+             </div>
+        </section>
+
+        <section id="education">
             <h2>Education</h2>
             <h3>Computer Science - Penn State Behrend | 2026</h3>
             <p>Provide details about your academic background.</p>
             <!-- Repeat this section for each educational experience -->
+        </section>
 
-
+        <section id="contact">
             <h2>Contact</h2>
             <ul>
                 <li>Email: nmdigilio@outlook.com</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/nathan-digilio-9313781b5/">linkedin.com/in/nathan-digilio-9313781b5/</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/nathandigilio/">linkedin.com/in/nathandigilio/</a></li>
                 <li>GitHub: <a href="https://github.com/ItalianRagazzo">github.com/ItalianRagazzo</a></li>
                 <!-- Add more contact information as needed -->
             </ul>
         </section>
     </div>
 
-    <footer>
-        Thanks for the visit.
-    </footer>
+  
+
+
 
 </body>
 </html>
